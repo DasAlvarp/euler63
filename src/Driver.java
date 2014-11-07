@@ -19,7 +19,7 @@ public class Driver {
 
         for (int x = 0; x < LINES; x++) {
             for (int y = 0; y < x + 1; y++) {
-                System.out.println(x + "WRITING" + y);
+                System.out.println(x + " WRITING " + y);
                 if (scanMan.hasNextInt()) {
                     Node t = new Node();
                     t.val = scanMan.nextInt();
@@ -76,7 +76,7 @@ public class Driver {
             }
 
 
-            System.out.println(depth + "DOING RECURSIVE THINGS" + leftiness);
+            System.out.println(depth + " DOING RECURSIVE THINGS " + leftiness);
             return head;
         }
     }
