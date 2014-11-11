@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Driver {
 
-    public static final int LINES = 100;
+    public static final int LINES = 16;
     public static Node[][] nodeTemp = new Node[LINES][LINES];
 
     public static void main(String[] args) throws FileNotFoundException {
@@ -32,10 +32,7 @@ public class Driver {
 
         Node root = recuriveFill(nodeTemp[0][0], 0, 0);
 
-        Node t = root;
-
-        System.out.println(root.total + ", " + greedyBest(root, 0));
-
+       System.out.println(root.total);
 
     }
 
@@ -75,8 +72,6 @@ public class Driver {
 
             }
 
-
-            System.out.println(depth + " DOING RECURSIVE THINGS " + leftiness);
             return head;
         }
     }
